@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prescription"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"/>
+    <EditText
+        android:id="@+id/patient_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/patient_name"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:background="@color/edittext_color"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/mobile_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mobile_no"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:background="@color/edittext_color"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:inputType="phone"
+        android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/age"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:background="@color/edittext_color"
+        android:padding="10dp"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/weight"
+        android:textSize="20sp"
+        android:background="@color/edittext_color"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/next"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/edittext_color"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Whatever need collectthis patient details"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>

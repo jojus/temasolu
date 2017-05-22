@@ -1,0 +1,22 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <gradient android:angle="90"
+                        android:centerColor="@color/edittext_color"
+                        android:endColor="@color/edittext_color"
+                        android:startColor="@color/edittext_color"
+                        android:type="linear" />
+                    <padding android:bottom="10dp"
+                        android:left="15dp"
+                        android:right="15dp"
+                        android:top="15dp" />
+                </shape>
+            </item>
+            <item>
+                <bitmap android:gravity="bottom|right" android:src="@drawable/drop_down" />
+            </item>
+        </layer-list>
+    </item>
+</selector>
