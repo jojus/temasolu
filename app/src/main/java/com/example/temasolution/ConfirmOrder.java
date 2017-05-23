@@ -1,4 +1,4 @@
-package example.com.temasolution;
+package com.example.temasolution;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -11,12 +11,12 @@ import android.view.ViewGroup;
  * Created by Justin Joy (jojus) on 22-05-2017.
  */
 
+@SuppressWarnings("DefaultFileTemplate")
 public class ConfirmOrder extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.confirmation_order,container,false);
-        return v;
+        return inflater.inflate(R.layout.confirmation_order,container,false);
     }
 }

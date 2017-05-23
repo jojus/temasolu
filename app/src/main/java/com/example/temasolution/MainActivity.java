@@ -1,4 +1,4 @@
-package example.com.temasolution;
+package com.example.temasolution;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import android.widget.Button;
  * Created by Justin Joy (jojus) on 17-05-2017.
  */
 
+@SuppressWarnings("DefaultFileTemplate")
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

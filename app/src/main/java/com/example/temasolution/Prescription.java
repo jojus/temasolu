@@ -1,4 +1,4 @@
-package example.com.temasolution;
+package com.example.temasolution;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -11,11 +11,11 @@ import android.view.ViewGroup;
  * Created by Justin Joy (jojus) on 17-05-2017.
  */
 
+@SuppressWarnings("DefaultFileTemplate")
 public class Prescription extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.prescription, container, false);
-        return v;
+        return inflater.inflate(R.layout.prescription, container, false);
     }
 }

@@ -1,4 +1,4 @@
-package example.com.temasolution;
+package com.example.temasolution;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -41,6 +41,7 @@ public class NavigationDrawer extends AppCompatActivity
                 super.onDrawerClosed(drawerView);
                 InputMethodManager inputMethodManager = (InputMethodManager)
                         getSystemService(Context.INPUT_METHOD_SERVICE);
+                //noinspection ConstantConditions
                 inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
             }
 
@@ -50,6 +51,7 @@ public class NavigationDrawer extends AppCompatActivity
                 super.onDrawerOpened(drawerView);
                 InputMethodManager inputMethodManager = (InputMethodManager)
                         getSystemService(Context.INPUT_METHOD_SERVICE);
+                //noinspection ConstantConditions
                 inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
             }
         };

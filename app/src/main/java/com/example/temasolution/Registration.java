@@ -1,4 +1,4 @@
-package example.com.temasolution;
+package com.example.temasolution;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -20,13 +20,13 @@ import com.android.volley.toolbox.Volley;
 import java.util.HashMap;
 import java.util.Map;
 
-import static example.com.temasolution.Constants.KEY_ADDRESS;
-import static example.com.temasolution.Constants.KEY_EDUCATION;
-import static example.com.temasolution.Constants.KEY_EMAIL;
-import static example.com.temasolution.Constants.KEY_HOSPITAL;
-import static example.com.temasolution.Constants.KEY_MOBILE;
-import static example.com.temasolution.Constants.KEY_REGISTERID;
-import static example.com.temasolution.Constants.KEY_USERNAME;
+import static com.example.temasolution.Constants.KEY_ADDRESS;
+import static com.example.temasolution.Constants.KEY_EDUCATION;
+import static com.example.temasolution.Constants.KEY_EMAIL;
+import static com.example.temasolution.Constants.KEY_HOSPITAL;
+import static com.example.temasolution.Constants.KEY_MOBILE;
+import static com.example.temasolution.Constants.KEY_REGISTERID;
+import static com.example.temasolution.Constants.KEY_USERNAME;
 
 /**
  * Created by Justin Joy (jojus) on 17-05-2017.

@@ -1,16 +1,17 @@
-package example.com.temasolution;
+package com.example.temasolution;
 
 /**
  * Created by Justin Joy (jojus) on 22-05-2017.
  */
 
-public class Constants {
+@SuppressWarnings("DefaultFileTemplate")
+class Constants {
 
-    public static final String KEY_USERNAME = "uname";
-    public static final String KEY_EMAIL = "emailid";
-    public static final String KEY_MOBILE = "mblno";
-    public static final String KEY_REGISTERID = "regid";
-    public static final String KEY_HOSPITAL = "hospital";
-    public static final String KEY_ADDRESS = "address";
-    public static final String KEY_EDUCATION = "education";
+    static final String KEY_USERNAME = "uname";
+     static final String KEY_EMAIL = "emailid";
+     static final String KEY_MOBILE = "mblno";
+     static final String KEY_REGISTERID = "regid";
+     static final String KEY_HOSPITAL = "hospital";
+     static final String KEY_ADDRESS = "address";
+     static final String KEY_EDUCATION = "education";
 }
