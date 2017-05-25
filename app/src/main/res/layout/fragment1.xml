@@ -40,6 +40,20 @@
         android:padding="7dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
+<!-- added password field 26/05/2017 -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/edittext_color"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="7dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <EditText
         android:id="@+id/phone_no"
