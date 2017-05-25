@@ -20,13 +20,7 @@ import com.android.volley.toolbox.Volley;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.example.temasolution.Constants.KEY_ADDRESS;
-import static com.example.temasolution.Constants.KEY_EDUCATION;
-import static com.example.temasolution.Constants.KEY_EMAIL;
-import static com.example.temasolution.Constants.KEY_HOSPITAL;
-import static com.example.temasolution.Constants.KEY_MOBILE;
-import static com.example.temasolution.Constants.KEY_REGISTERID;
-import static com.example.temasolution.Constants.KEY_USERNAME;
+import com.example.temasolution.Constants;
 
 /**
  * Created by Justin Joy (jojus) on 17-05-2017.
@@ -39,6 +33,7 @@ public class Registration extends Fragment implements View.OnClickListener {
     private EditText emailId;
     private EditText phoneNo;
     private EditText registrationId;
+    private EditText pass;//newly added
     private EditText hospital;
     private EditText address;
     private EditText education;
@@ -51,6 +46,7 @@ public class Registration extends Fragment implements View.OnClickListener {
         emailId = (EditText) v.findViewById(R.id.email_id);
         phoneNo = (EditText) v.findViewById(R.id.phone_no);
         registrationId = (EditText) v.findViewById(R.id.registration_id);
+        pass= (EditText) v.findViewById(R.id.password);//newly added
         hospital = (EditText) v.findViewById(R.id.hospital);
         address = (EditText) v.findViewById(R.id.address);
         education = (EditText) v.findViewById(R.id.educaton);
@@ -65,6 +61,7 @@ public class Registration extends Fragment implements View.OnClickListener {
         final String email = emailId.getText().toString().trim();
         final String phoneNumber = phoneNo.getText().toString().trim();
         final String registration = registrationId.getText().toString().trim();
+        final String password = pass.getText().toString().trim();//newly added
         final String hospi = hospital.getText().toString().trim();
         final String addr = address.getText().toString().trim();
         final String educa = education.getText().toString().trim();
@@ -85,13 +82,14 @@ public class Registration extends Fragment implements View.OnClickListener {
             @Override
             protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<>();
-                params.put(KEY_USERNAME, username);
-                params.put(KEY_EMAIL, email);
-                params.put(KEY_MOBILE, phoneNumber);
-                params.put(KEY_REGISTERID, registration);
-                params.put(KEY_HOSPITAL, hospi);
-                params.put(KEY_ADDRESS, addr);
-                params.put(KEY_EDUCATION, educa);
+                params.put(Constants.KEY_USERNAME, username);
+                params.put(Constants.KEY_EMAIL, email);
+                params.put(Constants.KEY_MOBILE, phoneNumber);
+                params.put(Constants.KEY_REGISTERID, registration);
+                params.put(Constants.KEY_PASSWORD, password);//newly added
+                params.put(Constants.KEY_HOSPITAL, hospi);
+                params.put(Constants.KEY_ADDRESS, addr);
+                params.put(Constants.KEY_EDUCATION, educa);
                 return params;
             }
 
